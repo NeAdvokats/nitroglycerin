@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>nitroglycerin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+  <body class="app">
+    <header class="nav">
+      <a class="brand" href="index.html">nitroglycerin</a>
+      <nav>
+        <a href="index.html">What is this?</a>
+        <a href="manually.html" aria-current="page">Manually</a>
+        <a href="developer.html">Developers</a>
+      </nav>
+    </header>
+    <div class="split">
+      <section class="view">
+        <div class="wrap" id="wrap">
+          <div class="stage" id="stage" tabindex="0" role="button">
+            <button class="btn x" id="close" type="button">Escape</button>
+            <div class="bar" id="bar"></div>
+            <div class="desk">
+              <pre class="win focus" id="w1"></pre>
+              <pre class="win" id="w2"></pre>
+              <pre class="win" id="w3"></pre>
+            </div>
+          </div>
+        </div>
+          <div class="tools">
+            <label class="btn g">Import wallpaper<input id="wall" type="file" accept="image/*" hidden></label>
+            <button class="btn g" id="nowall" type="button">Reset</button>
+            <span class="sp"></span>
+            <span>Click on the preview to see the full screen</span>
+          </div>
+      </section>
+        <aside class="panel">
+          <div class="tabs" id="tabs" role="tablist"></div>
+          <div id="pane"></div>
+        </aside>
+      </div>
+      <script src="js/app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>nitroglycerin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+  <body class="app">
+    <header class="nav">
+      <a class="brand" href="index.html">nitroglycerin</a>
+      <nav>
+        <a href="index.html" aria-current="page">What is this?</a>
+        <a href="manually.html" >Manually</a>
+        <a href="developer.html">Developers</a>
+      </nav>
+    </header>
+    <main class="page">
+      <h1><i>Nitroglycerin</i> is a highly convenient config generator for MangoWM</h1>
+      <p>To start with, you will see a navigation bar at the top with 3 items: <code>"What is this?"</code>, <code>"Manually"</code>, and <code>"Developers"</code>. Clicking on <code>Manually</code> (which is the most important page) will bring up what looks like a Boeing cockpit—but don't worry! On the left, you can see a preview of your config, with the default setup pulled from <code>/etc/mango/config.conf</code>. Your task is to customize it exactly how you want.</p>
+
+      <p>How do you do that? On the right, you have absolutely all the attributes of the base config from start to finish. (You can also import your existing terminal, <code>mangowm</code>, and <code>waybar</code> configs right inside the <code>Export &gt; Import config</code> tab). Every attribute modifies the config content, and all of your settings are saved directly in your browser's local storage.</p>
+
+      <p>If you need to autostart a command when your <code>mangowm</code> session launches, you can use the <code>"Your own additions"</code> feature. This simply appends the exact lines you write into the main config (though honestly, it's mostly useless). Moving forward, I will be adding support for more than just <code>mangowm</code>, so stay tuned. I hope this makes generating your configs a whole lot easier!</p>
+    </main>
+  </body>
+</html>
