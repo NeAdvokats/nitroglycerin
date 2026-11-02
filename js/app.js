@@ -364,6 +364,24 @@ yM2MNNNNNNNmmmmmNNMmhs+1-
 /2ohdmmddhys+++/:1.
   -//////:--.`,
   },
+  gas: {
+    name: 'Gas Mask',
+    art: String.raw`⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣶⣿⣿⣿⣿⣿⣿⣿⣿⣶⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⡀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣿⣿⡿⠋⠀⠀⠀⠈⢻⣿⣿⠟⠁⠀⠀⠀⠙⣿⣿⣿⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣿⣿⡇⠀⠀⠀⠀⠀⢈⣿⣿⠀⠀⠀⠀⠀⠀⢸⣿⣿⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣿⣿⣷⣄⠀⠀⠀⢀⣼⣿⣿⣧⡀⠀⠀⠀⣠⣿⣿⣿⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠻⠿⣿⣿⣿⣶⣿⣿⠿⠛⠛⠿⣿⣷⣶⣿⣿⣿⠿⠟⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣿⠏⢠⣶⠛⠛⣶⡄⠹⣿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⣿⠋⠑⠊⠙⣿⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠲⠾⠷⠖⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣈⣀⣀⣀⣀⣁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣈⣉⣉⣉⣉⣁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠉⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀`,
+  },
   none: { name: 'Unknown', art: '' },
 };
 
@@ -1226,7 +1244,7 @@ function terminalPanel() {
   panel.append(
     selectField(term, 'shell', 'Terminal', [['alacritty', 'alacritty'], ['foot', 'foot'], ['kitty', 'kitty']]),
                selectField(state, 'logo', 'ASCII logo',
-                           [['arch', 'Arch'], ['unknown', 'Unknown'], ['gentoo', 'Gentoo'], ['none', 'No logo'], ['custom', 'Custom']],
+                           [['arch', 'Arch'], ['unknown', 'Unknown'], ['gentoo', 'Gentoo'], ['gas', 'Gas'], ['none', 'No logo'], ['custom', 'Custom']],
                            () => { showPanel(); update(); }),
   );
   if (state.logo === 'custom') panel.append(customLogo);
